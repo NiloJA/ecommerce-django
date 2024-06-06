@@ -35,6 +35,9 @@
         // jquery ready start
         $(document).ready(function () {
             // jQuery code
+            setTimeout(() => {
+                $('#message').fadeOut('slow')
+            }, 4000);
 
         });
         // jquery end
@@ -44,10 +47,10 @@
 
 <body>
 
-{% include 'includes/navbar.html' %}
+    {% include 'includes/navbar.html' %}
 
     {% block content %}
 
     {% endblock %}
 
-{% include 'includes/footer.html' %}
+    {% include 'includes/footer.html' %}
